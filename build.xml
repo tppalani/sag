@@ -24,7 +24,7 @@
 	</target>
 
         <target name="build" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="build" inheritAll="true"/>
+        	<ant dir="/home/viswa/softwareag/common/lib" antfile="/tmp/sagdevops-ci-assets/build.xml" target="build" inheritAll="true"/>
 	</target>
 
         <target name="deploy" depends="">
