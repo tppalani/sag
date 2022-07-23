@@ -20,7 +20,7 @@
 
 
 	<target name="buildDeployTest" depends="">
-        	<ant dir="${SAG_CI_HOME}" antfile="${SAG_CI_HOME}/build.xml" target="buildDeployTest" inheritAll="true"/>
+        	<ant dir="/tmp/sagdevops-ci-assets/" antfile="/tmp/sagdevops-ci-assets/build.xml" target="buildDeployTest" inheritAll="true"/>
 	</target>
 
         <target name="build" depends="">
