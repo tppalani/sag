@@ -10,10 +10,5 @@ elif  [ "$STATUS" = "nothing added to commit but untracked files present (use \"
 then
 		echo "nothing to commit, working tree clean"
 		
-elif  [ "$STATUS" = "Changes not staged for commit" ]
-then
-		echo "use git add <file> to update what will be committed"
-		echo "use git restore <file> to discard changes in working directory"
-		
 fi
 
