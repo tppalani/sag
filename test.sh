@@ -7,7 +7,6 @@ then
 		echo "pused"
 		
 elif [ "$STATUS" = "nothing added to commit but untracked files present (use \"git add\" to track)" ]; then
-then
 		echo "nothing to commit, working tree clean"
 		
 fi
