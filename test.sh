@@ -1,4 +1,4 @@
-o#!/bin/sh
+#!/bin/bash
 
 STATUS=$(git status | tail -1)
 if [ "$STATUS" = "nothing to commit, working tree clean" ]
