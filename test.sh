@@ -1,6 +1,11 @@
 #!/bin/sh
 
-#Echo message if there is no files to commit, stage or push
-    if [ "$(git status --porcelain)" ]; then
-        echo "There are no files to commit, stage or push"
-    fi
+STATUS=$(git status | tail -1)
+if [ "$STATUS" = "nothing added to commit but untracked files present (use \"git add\" to track)" ]
+then
+        echo "please add local changes"
+        echo "git add"
+else
+        echo "Your branch is up to date with 'origin/main'"
+
+fi
